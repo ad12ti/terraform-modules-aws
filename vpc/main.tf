@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 module "vpc" {
-  source               = "./modules/vpc"
+  source               = "https://github.com/ad12ti/terraform-modules-aws/tree/1c200f7c3a5fc50b49757d14c0a72a68c7ca7189/vpc"
   vpc_cidr             = var.vpc_cidr
   public_subnet_cidrs  = var.public_subnet_cidrs
   private_subnet_cidrs = var.private_subnet_cidrs
